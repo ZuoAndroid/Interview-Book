@@ -19,7 +19,7 @@ keywords: 算法, 时间复杂度
 |操作	|平均情况	|最坏情况|
 | - | :-: | -: | 
 |复制	|O(n)	|O(n)|
-|append[注1]	|O(1)	|O(1)|
+|append	|O(1)	|O(1)|
 |插入	|O(n)	|O(n)|
 |取元素	|O(1)	|O(1)|
 |更改元素	|O(1)	|O(1)|
@@ -28,9 +28,24 @@ keywords: 算法, 时间复杂度
 |取切片	|O(k)	|O(k)|
 |删除切片	|O(n)	|O(n)|
 |更改切片	|O(k+n)	|O(k+n)|
-|extend[注1]	|O(k)	|O(k)|
+|extend	|O(k)	|O(k)|
 |排序	|O(n log n)	|O(n log n)|
 |列表乘法	|O(nk)	|O(nk)|
 |x in s	|O(n)||	 
 |min(s), |max(s)	|O(n)	 
 |计算长度	|O(1)	|O(1)
+
+#### 双向队列(collections.deque)
+deque (double-ended queue，双向队列)是以双向链表的形式实现的 (Well, a list of arrays rather than objects, for greater efficiency)。双向队列的两端都是可达的，但从查找队列中间的元素较为缓慢，增删元素就更慢了。
+
+|操作	|平均情况	|最坏情况|
+| - | :-: | -: | 
+|复制	|O(n)	|O(n)|
+|append	|O(1)	|O(1)|
+|appendleft	|O(1)	|O(1)|
+|pop	|O(1)	|O(1)|
+|popleft	|O(1)	|O(1)|
+|extend	O(k)	|O(k)|
+|extendleft	|O(k)	|O(k)|
+|rotate|	O(k)	|O(k)|
+|remove	|O(n)	|O(n)|
