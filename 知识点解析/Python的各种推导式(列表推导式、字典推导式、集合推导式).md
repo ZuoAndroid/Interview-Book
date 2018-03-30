@@ -55,3 +55,15 @@ In [7]: for i in list:
 6
 8
 ```
+
+#### 2. 字典推导式
+字典推导和列表推导的使用方法是类似的，只不中括号该改成大括号。直接举例说明：
+快速更换key和value：
+```python
+In [10]: dic = {'a':10, 'b':20}
+
+In [11]: n_dic = {v:k for k,v in dic.items()}
+
+In [12]: n_dic
+Out[12]: {10: 'a', 20: 'b'}
+```
